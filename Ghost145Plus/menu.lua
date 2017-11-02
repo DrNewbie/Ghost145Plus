@@ -48,16 +48,18 @@ end)
 
 Hooks:Add('MenuManagerOnOpenMenu', 'Ghost145Plus_RunInitNow', function(self, menu, ...)
 	if menu == 'menu_main' then
-		if UpdateThisMod then
-			UpdateThisMod:Add({
-				mod_id = 'Ghost 145+',
-				data = {
-					modworkshop_id = 21203,
-					dl_url = 'https://drnewbie.github.io/Ghost145Plus/Ghost145Plus.zip',
-					info_url = 'https://drnewbie.github.io/Ghost145Plus/Ghost145Plus/mod.txt'
-				}
-			})
-			UpdateThisMod:Loop()
-		end
+		DelayedCalls:Add('DelayedMod_Ghost145Plus_RunInitNow_Delay', 7, function()
+			if UpdateThisMod then
+				UpdateThisMod:Add({
+					mod_id = 'Ghost 145+',
+					data = {
+						modworkshop_id = 21203,
+						dl_url = 'https://drnewbie.github.io/Ghost145Plus/Ghost145Plus.zip',
+						info_url = 'https://drnewbie.github.io/Ghost145Plus/Ghost145Plus/mod.txt'
+					}
+				})
+				UpdateThisMod:Loop()
+			end
+		end)
 	end
 end)
