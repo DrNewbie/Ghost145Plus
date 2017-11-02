@@ -3,6 +3,12 @@
 	"description": "Activates more difficult stealth mechanics for heists on Overkill and Death Wish. They can be enabled via mod options along with more detailed descriptions of their effects on gameplay.",
 	"author": "Fooksie , Dr_Newbie",
 	"contact": "https://modworkshop.net/",
+	"updates" :
+	[
+		{
+			"identifier" : 21203
+		}
+	],
 	"version": "4",
 	"priority": 1,
 	"blt_version": 2,
