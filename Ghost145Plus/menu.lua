@@ -48,7 +48,7 @@ end)
 
 Hooks:Add('MenuManagerOnOpenMenu', 'Ghost145Plus_RunInitNow', function(self, menu, ...)
 	if menu == 'menu_main' then
-		DelayedCalls:Add('DelayedMod_Ghost145Plus_RunInitNow_Delay', 7, function()
+		DelayedCalls:Add('DelayedMod_Ghost145Plus_RunInitNow_Delay', 1, function()
 			if UpdateThisMod then
 				UpdateThisMod:Add({
 					mod_id = 'Ghost 145+',
