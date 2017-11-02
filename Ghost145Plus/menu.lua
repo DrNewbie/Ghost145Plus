@@ -46,6 +46,7 @@ Hooks:Add("MenuManagerInitialize", "MenManIni:g145Menu", function(menu_manager)
 	MenuHelper:LoadFromJsonFile(m_ghost._path.."menu.txt", m_ghost, m_ghost._data)
 end)
 
+_G.UpdateThisMod = _G.UpdateThisMod or nil
 Hooks:Add('MenuManagerOnOpenMenu', 'Ghost145Plus_RunInitNow', function(self, menu, ...)
 	if menu == 'menu_main' then
 		DelayedCalls:Add('DelayedMod_Ghost145Plus_RunInitNow_Delay', 1, function()
@@ -58,7 +59,6 @@ Hooks:Add('MenuManagerOnOpenMenu', 'Ghost145Plus_RunInitNow', function(self, men
 						info_url = 'https://drnewbie.github.io/Ghost145Plus/Ghost145Plus/mod.txt'
 					}
 				})
-				UpdateThisMod:Loop()
 			end
 		end)
 	end
