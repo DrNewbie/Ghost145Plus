@@ -1,7 +1,7 @@
 {
 	"menu_id": "m_ghost",
 	"parent_menu_id": "blt_options",
-	"title": "m_ghost_mode",
+	"title": "m_ghost",
 	"description": "m_ghost_desc",
 	"back_callback": "m_ghost_save",
 	"items": [
