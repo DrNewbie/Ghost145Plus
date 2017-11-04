@@ -2,7 +2,9 @@ function JobManager:_set_ghost_bonus(ghost_bonus, digest)
 	ghost_bonus = Application:digest_value(ghost_bonus, false)
 	ghost_bonus = ghost_bonus or 0
 	Application:debug("[JobManager:_set_ghost_bonus]", "ghost_bonus", ghost_bonus, "digest", digest)
-	if m_ghost:mode() >= 3 then
+	if m_ghost:mode() == 4 then
+		ghost_bonus = ghost_bonus * 4
+	elseif m_ghost:mode() == 3 then
 		ghost_bonus = ghost_bonus * 3
 	elseif m_ghost:mode() == 2 then
 		ghost_bonus = ghost_bonus * 2
