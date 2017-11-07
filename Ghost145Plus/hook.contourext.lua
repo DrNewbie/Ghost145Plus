@@ -1,5 +1,5 @@
 m_ghost._qualify = m_ghost:mode()
-local dur = m_ghost:mode() >= 3 and 0 or m_ghost:mode() == 2 and 6 or 13.5
+local dur = m_ghost:mode() >= 3 and 0 or m_ghost:mode() == 2 and 6 or m_ghost:mode() == 4 and 4 or 13.5
 ContourExt._types.mark_enemy.fadeout_silent = dur
 ContourExt._types.mark_enemy_damage_bonus.fadeout_silent = dur
 ContourExt._types.mark_enemy_damage_bonus_distance.fadeout_silent = dur
