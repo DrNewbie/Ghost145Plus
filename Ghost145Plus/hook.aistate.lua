@@ -22,8 +22,8 @@ local Ghost145Plus_GroupAIStateBase_register_ecm_jammer = GroupAIStateBase.regis
 
 function GroupAIStateBase:register_ecm_jammer(unit, jam_settings)
 	if (Network:is_server() or Global.game_settings.single_player) and jam_settings then
-		jam_settings.call = jam_settings.call and m_ghost:mode() < 3
-		jam_settings.pager = jam_settings.pager and m_ghost:mode() < 3
+		jam_settings.call = jam_settings.call and m_ghost:mode() ~= 3
+		jam_settings.pager = jam_settings.pager and m_ghost:mode() ~= 3
 	end
 	return Ghost145Plus_GroupAIStateBase_register_ecm_jammer(self, unit, jam_settings)
 end

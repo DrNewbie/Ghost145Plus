@@ -8,10 +8,10 @@ local Ghost145Plus_ContourExt_add = ContourExt.add
 
 function ContourExt:add(type, sync, multiplier)
 	if type == 'mark_enemy' or type == 'mark_enemy_damage_bonus' or type == 'mark_enemy_damage_bonus_distance' then
-		if m_ghost:mode() >= 3 then
+		if m_ghost:mode() == 3 then
 			self:remove(type, true)
 			return
-		elseif m_ghost:mode() == 2 then
+		elseif m_ghost:mode() == 2 or m_ghost:mode() == 4 then
 			multiplier = 0.5
 		end
 		sync = true
