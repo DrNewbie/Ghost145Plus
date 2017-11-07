@@ -1,7 +1,7 @@
-if m_ghost:mode() >= 3 then
+if m_ghost:mode() == 3 then
 	tweak_data.player.alarm_pager.bluff_success_chance = {0}
 	tweak_data.player.alarm_pager.bluff_success_chance_w_skill = {0}
-elseif m_ghost:mode() == 2 then
+elseif m_ghost:mode() == 2 or m_ghost:mode() == 4 then
 	tweak_data.player.alarm_pager.bluff_success_chance = {1, 1, 1, 0}
 	tweak_data.player.alarm_pager.bluff_success_chance_w_skill = {1, 1, 1, 0}
 end
@@ -9,9 +9,9 @@ end
 function GroupAIStateBase:get_nr_successful_alarm_pager_bluffs()
 	local bluffs = self._nr_successful_alarm_pager_bluffs
 	if (Network:is_server() or Global.game_settings.single_player) then
-		if m_ghost:mode() == 2 then
+		if m_ghost:mode() == 2 or m_ghost:mode() == 4 then
 				bluffs = bluffs + 1
-		elseif m_ghost:mode() >= 3 then
+		elseif m_ghost:mode() == 3 then
 				bluffs = bluffs + 4
 		end
 	end
