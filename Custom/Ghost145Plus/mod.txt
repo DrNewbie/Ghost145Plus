@@ -1,0 +1,49 @@
+{
+	"name": "Ghost 145+ (Custom)",
+	"description": " ",
+	"author": "Fooksie , Dr_Newbie",
+	"contact": "https://modworkshop.net/",
+	"version": "12",
+	"priority": 1,
+	"blt_version": 2,
+	"updates" :
+	[
+		{
+			"identifier" : 21203
+		}
+	],
+	"hooks": [
+		{
+			"hook_id" : "lib/managers/menumanager",
+			"script_path" : "menu.lua"
+		},
+		{
+			"hook_id" : "lib/managers/jobmanager",
+			"script_path" : "hook.job.lua"
+		},
+		{
+			"hook_id" : "lib/managers/statisticsmanager",
+			"script_path" : "hook.stats.lua"
+		},
+		{
+			"hook_id" : "lib/managers/group_ai_states/groupaistatebase",
+			"script_path" : "hook.aistate.lua"
+		},
+		{
+			"hook_id" : "lib/units/civilians/civilianbrain",
+			"script_path" : "hook.civbrain.lua"
+		},
+		{
+			"hook_id" : "lib/states/ingamewaitingforplayers",
+			"script_path" : "hook.gamestate.lua"
+		},
+		{
+			"hook_id" : "lib/units/contourext",
+			"script_path" : "hook.contourext.lua"
+		},
+		{
+			"hook_id" : "lib/managers/group_ai_states/groupaistatebase",
+			"script_path" : "hook.groupaistatebase.lua"
+		}
+	]
+}
