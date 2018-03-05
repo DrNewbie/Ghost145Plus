@@ -1,5 +1,5 @@
 Hooks:PostHook(GroupAIStateBase, "_upd_criminal_suspicion_progress", "Ghost145Plus_GroupAIStateBase__upd_criminal_suspicion_progress", function(self)
-	if (Network:is_server() or Global.game_settings.single_player) and m_ghost._data.iidetect then
+	if (Network:is_server() or Global.game_settings.single_player) and m_ghost._data.iidetect and m_ghost._data.iidetect == 2 then
 		local susp_data = self._suspicion_hud_data
 		if not next(susp_data) or not self._ai_enabled then
 			return

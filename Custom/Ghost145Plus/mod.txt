@@ -3,7 +3,7 @@
 	"description": " ",
 	"author": "Fooksie , Dr_Newbie",
 	"contact": "https://modworkshop.net/",
-	"version": "13",
+	"version": "14",
 	"priority": 1,
 	"blt_version": 2,
 	"updates" :
@@ -44,6 +44,22 @@
 		{
 			"hook_id" : "lib/managers/group_ai_states/groupaistatebase",
 			"script_path" : "hook.groupaistatebase.lua"
+		},
+		{
+			"hook_id" : "lib/units/enemies/cop/copdamage",
+			"script_path" : "hook.copdamage.lua"
+		},
+		{
+			"hook_id" : "lib/units/enemies/cop/copmovement",
+			"script_path" : "hook.copmovement.lua"
+		},
+		{
+			"hook_id" : "lib/units/enemies/medic/medicdamage",
+			"script_path" : "hook.copdamage.lua"
+		},
+		{
+			"hook_id" : "lib/units/enemies/tank/tankcopdamage",
+			"script_path" : "hook.copdamage.lua"
 		}
 	]
 }

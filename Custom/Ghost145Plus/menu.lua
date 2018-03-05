@@ -10,7 +10,8 @@ m_ghost = m_ghost or {
 		ecmcam = true,
 		ecmphone = true,
 		ecmpager = true,
-		iidetect = 1
+		iidetect = 1,
+		oneshotkill = false
 	}
 }
 
@@ -59,7 +60,8 @@ Hooks:Add("MenuManagerInitialize", "MenManIni_g145Menu", function(menu_manager)
 			ecmcam = true,
 			ecmphone = true,
 			ecmpager = true,
-			iidetect = 1
+			iidetect = 1,
+			oneshotkill = false
 		}
 		m_ghost:save()
 	end
@@ -86,6 +88,9 @@ Hooks:Add("MenuManagerInitialize", "MenManIni_g145Menu", function(menu_manager)
 	end
 	function MenuCallbackHandler:m_ghost_iidetect_set(item)
 		m_ghost._data.iidetect = item:value()
+	end
+	function MenuCallbackHandler:m_ghost_oneshotkill_set(item)
+		m_ghost._data.oneshotkill = tostring(item:value()) == 'on' and true or false
 	end
 	m_ghost:load()
 	MenuHelper:LoadFromJsonFile(m_ghost._path.."menu.txt", m_ghost, m_ghost._data)

@@ -104,6 +104,15 @@
 				"m_ghost_mode_iidetect_1"
 			],
 			"value":"iidetect"
+		},
+		{
+			"type":"toggle",
+			"id":"id_ghost_mode_oneshotkill",
+			"title":"m_ghost_mode_oneshotkill",
+			"description":"m_ghost_mode_oneshotkill_desc",
+			"callback":"m_ghost_oneshotkill_set",
+			"value":"oneshotkill",
+			"default_value":false
 		}
 	]
 }

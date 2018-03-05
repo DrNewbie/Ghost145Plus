@@ -26,6 +26,8 @@
 	"m_ghost_mode_ecmphone" : "ECM affect phone",
 	"m_ghost_mode_ecmpager" : "ECM affect pager",
 	"m_ghost_mode_iidetect" : "Immediately detect",
+	"m_ghost_mode_oneshotkill" : "One Shot Kill",
+	"m_ghost_mode_oneshotkill_desc" : "Disable 'One Shot Kill' while the enemy does not notice you.",
 	"m_ghost_mode_iidetect_off" : "OFF",
 	"m_ghost_mode_iidetect_1" : "Cops"
 }
