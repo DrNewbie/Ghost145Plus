@@ -1,1 +1,8 @@
-16
+[
+  {
+    "ident": "Ghost145CustomGitHubUpdate",
+    "hash": "a5e9b3a0be1509a208e187ec1e443dd3a4cadab48682e014809c45ccdb97388e",
+    "patchnotes": "https://github.com/DrNewbie/Ghost145Plus/commits/master",
+    "download": "https://drnewbie.github.io/Ghost145Plus/Update/Ghost145Custom.zip"
+  }
+]
