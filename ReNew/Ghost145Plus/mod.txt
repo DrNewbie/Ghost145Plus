@@ -1,9 +1,9 @@
 {
-  "name": "Ghost 145+ (Custom)",
-  "description": " ",
+  "name": "Ghost 145+ (Renew)",
+  "description": "Activates more difficult stealth mechanics for heists on Overkill and Death Wish. They can be enabled via mod options along with more detailed descriptions of their effects on gameplay.",
   "author": "Fooksie , Dr_Newbie",
   "contact": "https://modworkshop.net/",
-  "version": "16",
+  "version": "13",
   "priority": 100,
   "blt_version": 2,
   "hooks": [
@@ -28,36 +28,24 @@
       "script_path": "hook.civbrain.lua"
     },
     {
+      "hook_id": "lib/states/ingamewaitingforplayers",
+      "script_path": "hook.gamestate.lua"
+    },
+    {
       "hook_id": "lib/units/contourext",
       "script_path": "hook.contourext.lua"
     },
     {
       "hook_id": "lib/managers/group_ai_states/groupaistatebase",
       "script_path": "hook.groupaistatebase.lua"
-    },
-    {
-      "hook_id": "lib/units/enemies/cop/copdamage",
-      "script_path": "hook.copdamage.lua"
-    },
-    {
-      "hook_id": "lib/units/enemies/cop/copmovement",
-      "script_path": "hook.copmovement.lua"
-    },
-    {
-      "hook_id": "lib/units/enemies/medic/medicdamage",
-      "script_path": "hook.copdamage.lua"
-    },
-    {
-      "hook_id": "lib/units/enemies/tank/tankcopdamage",
-      "script_path": "hook.copdamage.lua"
     }
   ],
   "updates": [
     {
-      "identifier": "Ghost145CustomGitHubUpdate",
+      "identifier": "Ghost145ReNewGitHubUpdate",
       "host": {
-        "meta": "https://drnewbie.github.io/Ghost145Plus/Update/Ghost145Custom.meta.json",
-        "download": "https://drnewbie.github.io/Ghost145Plus/Update/Ghost145Custom.zip",
+        "meta": "https://drnewbie.github.io/Ghost145Plus/Update/Ghost145ReNew.meta.json",
+        "download": "https://drnewbie.github.io/Ghost145Plus/Update/Ghost145ReNew.zip",
         "patchnotes": "https://github.com/DrNewbie/Ghost145Plus/commits/master"
       }
     }
